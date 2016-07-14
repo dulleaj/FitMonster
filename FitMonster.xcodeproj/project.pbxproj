@@ -13,7 +13,10 @@
 		2AC905EF1D370505000984D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC905ED1D370505000984D6 /* Main.storyboard */; };
 		2AC905F11D370505000984D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC905F01D370505000984D6 /* Assets.xcassets */; };
 		2AC905F41D370505000984D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC905F21D370505000984D6 /* LaunchScreen.storyboard */; };
-		2AC905FC1D37073C000984D6 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AC905FB1D37073C000984D6 /* GoogleService-Info (1).plist */; };
+		2AC905FE1D372061000984D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AC905FD1D372061000984D6 /* GoogleService-Info.plist */; };
+		2AC906011D373CB4000984D6 /* StepsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC906001D373CB4000984D6 /* StepsViewController.m */; };
+		2AC906041D37400E000984D6 /* HealthKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC906031D37400E000984D6 /* HealthKitHelper.m */; };
+		DA92BF4D730DA19A62B76E3E /* libPods-FitMonster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E51EEF639F5B6255B2B81BCE /* libPods-FitMonster.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +30,14 @@
 		2AC905F01D370505000984D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AC905F31D370505000984D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AC905F51D370505000984D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AC905FB1D37073C000984D6 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		2AC905FD1D372061000984D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2AC905FF1D373CB4000984D6 /* StepsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepsViewController.h; sourceTree = "<group>"; };
+		2AC906001D373CB4000984D6 /* StepsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepsViewController.m; sourceTree = "<group>"; };
+		2AC906021D37400E000984D6 /* HealthKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthKitHelper.h; sourceTree = "<group>"; };
+		2AC906031D37400E000984D6 /* HealthKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthKitHelper.m; sourceTree = "<group>"; };
+		3159A6C016FF326A18DE55FD /* Pods-FitMonster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitMonster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitMonster/Pods-FitMonster.debug.xcconfig"; sourceTree = "<group>"; };
+		3911E97E27A792BCF43ECDF1 /* Pods-FitMonster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitMonster.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitMonster/Pods-FitMonster.release.xcconfig"; sourceTree = "<group>"; };
+		E51EEF639F5B6255B2B81BCE /* libPods-FitMonster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FitMonster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA92BF4D730DA19A62B76E3E /* libPods-FitMonster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +57,8 @@
 			children = (
 				2AC905E31D370505000984D6 /* FitMonster */,
 				2AC905E21D370505000984D6 /* Products */,
+				A3E2141CEDAE62E61B921D58 /* Pods */,
+				E1101D09F812F197854EB192 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,10 +78,14 @@
 				2AC905EA1D370505000984D6 /* ViewController.h */,
 				2AC905EB1D370505000984D6 /* ViewController.m */,
 				2AC905ED1D370505000984D6 /* Main.storyboard */,
+				2AC905FF1D373CB4000984D6 /* StepsViewController.h */,
+				2AC906001D373CB4000984D6 /* StepsViewController.m */,
+				2AC906021D37400E000984D6 /* HealthKitHelper.h */,
+				2AC906031D37400E000984D6 /* HealthKitHelper.m */,
 				2AC905F01D370505000984D6 /* Assets.xcassets */,
 				2AC905F21D370505000984D6 /* LaunchScreen.storyboard */,
 				2AC905F51D370505000984D6 /* Info.plist */,
-				2AC905FB1D37073C000984D6 /* GoogleService-Info (1).plist */,
+				2AC905FD1D372061000984D6 /* GoogleService-Info.plist */,
 				2AC905E41D370505000984D6 /* Supporting Files */,
 			);
 			path = FitMonster;
@@ -82,6 +99,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A3E2141CEDAE62E61B921D58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3159A6C016FF326A18DE55FD /* Pods-FitMonster.debug.xcconfig */,
+				3911E97E27A792BCF43ECDF1 /* Pods-FitMonster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1101D09F812F197854EB192 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E51EEF639F5B6255B2B81BCE /* libPods-FitMonster.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AC905F81D370505000984D6 /* Build configuration list for PBXNativeTarget "FitMonster" */;
 			buildPhases = (
+				0C130CD1D7D0BAF39DF7C688 /* [CP] Check Pods Manifest.lock */,
 				2AC905DD1D370505000984D6 /* Sources */,
 				2AC905DE1D370505000984D6 /* Frameworks */,
 				2AC905DF1D370505000984D6 /* Resources */,
+				991FAA7FF7FC0792B493F95E /* [CP] Embed Pods Frameworks */,
+				953457D0FFEB89F58FF22CD8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,13 +178,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AC905F41D370505000984D6 /* LaunchScreen.storyboard in Resources */,
+				2AC905FE1D372061000984D6 /* GoogleService-Info.plist in Resources */,
 				2AC905F11D370505000984D6 /* Assets.xcassets in Resources */,
 				2AC905EF1D370505000984D6 /* Main.storyboard in Resources */,
-				2AC905FC1D37073C000984D6 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C130CD1D7D0BAF39DF7C688 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		953457D0FFEB89F58FF22CD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitMonster/Pods-FitMonster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		991FAA7FF7FC0792B493F95E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitMonster/Pods-FitMonster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2AC905DD1D370505000984D6 /* Sources */ = {
@@ -156,6 +241,8 @@
 			files = (
 				2AC905EC1D370505000984D6 /* ViewController.m in Sources */,
 				2AC905E91D370505000984D6 /* AppDelegate.m in Sources */,
+				2AC906011D373CB4000984D6 /* StepsViewController.m in Sources */,
+				2AC906041D37400E000984D6 /* HealthKitHelper.m in Sources */,
 				2AC905E61D370505000984D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +355,7 @@
 		};
 		2AC905F91D370505000984D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3159A6C016FF326A18DE55FD /* Pods-FitMonster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FitMonster/Info.plist;
@@ -279,6 +367,7 @@
 		};
 		2AC905FA1D370505000984D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3911E97E27A792BCF43ECDF1 /* Pods-FitMonster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FitMonster/Info.plist;
@@ -307,6 +396,7 @@
 				2AC905FA1D370505000984D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

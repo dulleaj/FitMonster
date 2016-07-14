@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFr-qO-xUR" customClass="GIDSignInButton">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="d74-UX-xM0"/>
+                                    <constraint firstAttribute="width" constant="240" id="kgX-ks-qs4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eFr-qO-xUR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ANd-fc-NHA"/>
+                            <constraint firstItem="eFr-qO-xUR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uvR-YQ-xxZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="signInButton" destination="eFr-qO-xUR" id="pve-CC-hw0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Steps View Controller-->
+        <scene sceneID="QlA-ah-D4v">
+            <objects>
+                <viewController storyboardIdentifier="StepsViewController" id="Amp-8n-CRb" customClass="StepsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j7i-J1-kMV"/>
+                        <viewControllerLayoutGuide type="bottom" id="lwc-Kz-iAF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kCW-Kx-5hq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GRe-1D-4fN">
+                                <rect key="frame" x="200" y="400" width="200" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="hjy-cH-3U5"/>
+                                </constraints>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SI3-Ae-VZP">
+                                <rect key="frame" x="200" y="120" width="200" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3Ye-Sd-tyb"/>
+                                    <constraint firstAttribute="height" constant="250" id="q2t-1W-Bc5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2C-Vw-Z7U">
+                                <rect key="frame" x="200" y="440" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="f0h-Ry-EfZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GRe-1D-4fN" firstAttribute="top" secondItem="SI3-Ae-VZP" secondAttribute="bottom" constant="30" id="5fU-8K-nis"/>
+                            <constraint firstItem="GRe-1D-4fN" firstAttribute="centerX" secondItem="SI3-Ae-VZP" secondAttribute="centerX" id="6T0-hx-FTe"/>
+                            <constraint firstItem="SI3-Ae-VZP" firstAttribute="top" secondItem="j7i-J1-kMV" secondAttribute="bottom" constant="100" id="Ayf-79-ToI"/>
+                            <constraint firstItem="S2C-Vw-Z7U" firstAttribute="centerX" secondItem="GRe-1D-4fN" secondAttribute="centerX" id="HRn-Rz-7NM"/>
+                            <constraint firstItem="S2C-Vw-Z7U" firstAttribute="top" secondItem="GRe-1D-4fN" secondAttribute="bottom" constant="30" id="Jme-xA-QCg"/>
+                            <constraint firstItem="SI3-Ae-VZP" firstAttribute="centerX" secondItem="kCW-Kx-5hq" secondAttribute="centerX" id="QqO-6V-s53"/>
+                            <constraint firstItem="S2C-Vw-Z7U" firstAttribute="width" secondItem="GRe-1D-4fN" secondAttribute="width" id="cBo-hR-zhs"/>
+                            <constraint firstItem="SI3-Ae-VZP" firstAttribute="centerY" secondItem="kCW-Kx-5hq" secondAttribute="centerY" id="dxC-6T-6M7"/>
+                            <constraint firstItem="GRe-1D-4fN" firstAttribute="width" secondItem="SI3-Ae-VZP" secondAttribute="width" id="tZI-HJ-Ffk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dxC-6T-6M7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="labelForProgressBar" destination="S2C-Vw-Z7U" id="QBL-2s-QjB"/>
+                        <outlet property="monsterImageView" destination="SI3-Ae-VZP" id="dDc-tX-6uG"/>
+                        <outlet property="userProgressBar" destination="GRe-1D-4fN" id="P3w-Re-2FO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEt-Us-j5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="217"/>
         </scene>
     </scenes>
 </document>
