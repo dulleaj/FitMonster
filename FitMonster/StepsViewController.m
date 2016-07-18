@@ -11,8 +11,9 @@
 
 @interface StepsViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *monsterImageView;
-@property (weak, nonatomic) IBOutlet UIProgressView *userProgressBar;
+@property (strong, nonatomic) IBOutlet UIProgressView *userProgressViewBar;
 @property (weak, nonatomic) IBOutlet UILabel *labelForProgressBar;
+@property HealthKitHelper* user;
 
 @end
 
@@ -20,7 +21,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.user = [[HealthKitHelper alloc] init];
+    [self.user userAdventureStatus];
+    
+    self.userProgressViewBar = [[UIProgressView alloc] init];
+    //float userProgressFloat = self.user.stepsTaken/100000.0;
+    float userProgressFloat = .7;
+    self.userProgressViewBar.progress = userProgressFloat;//PROGRESS WON'T SHOW
+
+    self.labelForProgressBar.text = [NSString stringWithFormat:@"Steps Taken: %d", self.user.stepsTaken];
 }
 
 - (void)didReceiveMemoryWarning {

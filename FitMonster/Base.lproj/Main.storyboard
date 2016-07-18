@@ -51,8 +51,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GRe-1D-4fN">
-                                <rect key="frame" x="200" y="400" width="200" height="10"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="GRe-1D-4fN">
+                                <rect key="frame" x="200" y="400" width="200" height="3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="hjy-cH-3U5"/>
                                 </constraints>
@@ -70,7 +70,7 @@
                                     <constraint firstAttribute="height" constant="30" id="f0h-Ry-EfZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -95,7 +95,7 @@
                     <connections>
                         <outlet property="labelForProgressBar" destination="S2C-Vw-Z7U" id="QBL-2s-QjB"/>
                         <outlet property="monsterImageView" destination="SI3-Ae-VZP" id="dDc-tX-6uG"/>
-                        <outlet property="userProgressBar" destination="GRe-1D-4fN" id="P3w-Re-2FO"/>
+                        <outlet property="userProgressViewBar" destination="GRe-1D-4fN" id="tnf-mO-Jra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uEt-Us-j5U" userLabel="First Responder" sceneMemberID="firstResponder"/>

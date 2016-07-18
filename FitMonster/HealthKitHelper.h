@@ -12,4 +12,14 @@
 
 @interface HealthKitHelper : NSObject
 
+@property BOOL hasUserStartedAdventure;
+@property NSDate* startDate;
+@property NSString* startDateString;
+@property NSDate* todaysDate;
+@property CMPedometer* pedo;
+@property int stepsTaken;
+
+
+- (void)userAdventureStatus;
+
 @end
